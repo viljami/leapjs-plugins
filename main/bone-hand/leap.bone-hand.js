@@ -320,10 +320,10 @@
     scope.addShadowCamera = function() {
       scope.light = new THREE.SpotLight(0xffffff, 1);
       scope.light.castShadow = true;
-      scope.light.shadow.mapSize.width = 1024;
-      scope.light.shadow.mapSize.height = 1024;
-      scope.light.shadow.camera.near = 0.5 / 0.001;
-      scope.light.shadow.camera.far = 3 / 0.001;
+      scope.light.shadowWidth = 1024;
+      scope.light.shadowHeight = 1024;
+      scope.light.shadowCamera.near = 0.5 / 0.001;
+      scope.light.shadowCamera.far = 3 / 0.001;
       scope.light.position.set(0, 1000, 1000);
       scope.light.target.position.set(0, 0, -1000);
       scope.camera.add(scope.light.target);
