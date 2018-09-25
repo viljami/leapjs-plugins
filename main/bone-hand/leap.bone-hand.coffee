@@ -19,8 +19,8 @@ initScene = (targetEl, scale)->
 
   renderer.domElement.className = "leap-boneHand"
 
-  renderer.shadowMap.enabled = true
-  renderer.shadowMap.type = THREE.PCFSoftShadowMap
+  renderer.shadowMapEnabled = true
+  renderer.shadowMapType = THREE.PCFSoftShadowMap
 
   targetEl.appendChild(renderer.domElement)
 

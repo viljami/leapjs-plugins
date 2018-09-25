@@ -19,8 +19,8 @@
     renderer.setClearColor(0x000000, 0);
     renderer.setSize(width, height);
     renderer.domElement.className = "leap-boneHand";
-    renderer.shadowMap.enabled = true;
-    renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+    renderer.shadowMapEnabled = true;
+    renderer.shadowMapType = THREE.PCFSoftShadowMap;
     targetEl.appendChild(renderer.domElement);
     near = 1;
     far = 10000;
